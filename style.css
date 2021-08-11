@@ -1,4 +1,5 @@
 body {
+    font-family: 'Ubuntu';
     color: white;
     background: #000;
     height: 500vh;
@@ -57,4 +58,9 @@ input[type='radio']:checked + label {
         padding: 1rem 1.5rem;
         font-size: 3rem;
     }
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu-Medium.ttf');
 }
