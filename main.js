@@ -17,10 +17,12 @@ window.onload = () => {
     const canvas = document.querySelector('canvas');
     const context = canvas.getContext('2d');
     const MaxScroll = (document.body.scrollHeight - document.body.clientHeight);
+
+    // window.addEventListener('scroll', UpdateFrame);
     
     function UpdateFrame() {
         if (Images[Quality].length) {
-            if (window.scrollY == MaxScroll) window.scrollTo(0, 0);
+            if (MaxScroll - window.scrollY <= 1) window.scrollTo(0, 0);
             let FrameNum = Math.min(FrameLen-1, Math.floor(window.scrollY / MaxScroll * FrameLen));
 
             context.clearRect(0, 0, canvas.width, canvas.height);
