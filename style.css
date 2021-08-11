@@ -1,0 +1,36 @@
+body {
+    color: white;
+    background: #000;
+    height: 500vh;
+    user-select: none;
+}
+
+.Center {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    max-height: 100vh;
+    max-width: 100vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type='radio'] {
+    display: none;
+    /* appearance: none; */
+}
+
+label {
+    display: inline-block;
+    background: none;
+    border: solid 2px white;
+    border-radius: .5rem;
+    padding: .5rem .5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+input[type='radio']:checked + label {
+    background: white;
+    color: black;
+}
