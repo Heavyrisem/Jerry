@@ -17,7 +17,7 @@ window.onload = () => {
     const canvas = document.querySelector('canvas');
     const context = canvas.getContext('2d');
     const MaxScroll = (document.body.scrollHeight - document.body.clientHeight);
-
+    document.querySelector('input#normal').click();
     // window.addEventListener('scroll', UpdateFrame);
     
     function UpdateFrame() {
